@@ -1,0 +1,21 @@
+package com.syncronized;
+
+public class SyncronizedClass 
+{
+	int totalSeat=10;
+	int seat;
+	
+	public void bookseat(int tseat)
+	{
+		if(tseat>=10)
+		{
+			System.out.println("seat are not available: "+(totalSeat-tseat));
+		}
+		else
+		{
+			System.out.println("your seat booked succesfully: ");
+			System.out.println("total seaat available : "+(totalSeat-tseat));
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.syncronized;
+
+public class Launch  extends Thread
+{
+	static SyncronizedClass c1;
+	
+	
+	public static void main(String[] args)
+	{
+		c1=new SyncronizedClass();
+		
+	    Launch l1=new Launch();
+		l1.start();
+	}
+	
+	public void run()
+	{
+		c1.bookseat(8);
+	}
+
+}

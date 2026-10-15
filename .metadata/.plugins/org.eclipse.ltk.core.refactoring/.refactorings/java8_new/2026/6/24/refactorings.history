@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Practice.Sumint&apos; to &apos;WowelsArrange&apos;&#x0D;&#x0A;- Original project: &apos;java8_new&apos;&#x0D;&#x0A;- Original element: &apos;Practice.Sumint&apos;&#x0D;&#x0A;- Renamed element: &apos;Practice.WowelsArrange&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Sumint&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Practice{Sumint.java[Sumint" matchStrategy="1" name="WowelsArrange" qualified="false" references="true" similarDeclarations="false" stamp="1781336613341" textual="false" version="1.0"/>
+</session>

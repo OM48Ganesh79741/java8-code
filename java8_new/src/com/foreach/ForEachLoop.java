@@ -1,0 +1,97 @@
+//package com.foreach;
+//
+//import java.util.ArrayList;
+//import java.util.function.Consumer;
+//
+//public class ForEachLoop 
+//{
+//	public static void main(String[] args)
+//	{
+//		
+//		ArrayList<Integer> al=new ArrayList<Integer>();
+//		
+//		al.add(1650);
+//		al.add(20);
+//		al.add(430);
+//		al.add(1);
+//		
+//		
+//		
+//		Consumer<Integer> c=new Consumer(){
+//
+//					@Override
+//					public void accept(Integer i) 
+//					{
+//						System.out.println(i);
+//						
+//					}
+//			      
+//				};
+//		al.forEach(c);
+//		
+//		
+//		
+////		
+////		al.forEach((t)->{
+////			     System.out.println(t);
+////			};)
+//	}
+//
+//	
+//
+//}
+
+
+
+
+//package com.foreach;
+//
+//import java.util.ArrayList;
+//import java.util.function.Consumer;
+//
+//public class ForEachLoop {
+//    public static void main(String[] args) {
+//        
+//        ArrayList<Integer> al = new ArrayList<Integer>();
+//        
+//        al.add(1650);
+//        al.add(20);
+//        al.add(430);
+//        al.add(1);
+//        
+//    
+//      
+//
+//        al.forEach((c)-> {System.out.println(c);});  
+//
+//    }
+//}
+
+
+
+
+
+package com.foreach;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Set;
+import java.util.function.Consumer;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+public class ForEachLoop {
+    public static void main(String[] args) 
+    {
+    	
+    	int arr[]= {1,2,3,4,5,4,6,8,9,4};
+//  int a[]=Arrays.stream(arr).distinct().toArray();
+//  System.out.println(Arrays.toString(a));
+    	
+    	Set<Integer> a=Arrays.stream(arr).boxed().collect(Collectors.toSet());
+    	System.out.println(a);
+        
+    
+
+    }
+}

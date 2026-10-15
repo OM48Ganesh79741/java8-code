@@ -1,0 +1,45 @@
+package Practice;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.IntStream;
+
+public class CompSal 
+{
+	public static void main(String[] args) 
+	{
+		List<ramesh> list=new ArrayList<>();
+		 ramesh r1=new ramesh("ganesh",77.99f);
+		 ramesh r2=new ramesh("arvind",56.99f);
+		 ramesh r3=new ramesh("atama",799.99f);
+		 
+		 list.addAll(Arrays.asList(r1,r2,r3));
+//		 Collections.sort(list,(s1,s2)->
+//		 {
+//			 return Float.compare(s2.sal,s1.sal);
+//		 });
+//		 ramesh r=list.get(1);
+//		 System.out.println(r1.sal);
+		 
+		 
+		 int arr[]= {1,2,3};
+		IntStream f= Arrays.stream(arr);
+		System.out.println(f);
+		f.forEach(d -> System.out.println(d));
+		 
+	}
+
+}
+class ramesh
+{
+	String name;
+	float sal;
+	public ramesh(String name, float sal) {
+		super();
+		this.name = name;
+		this.sal = sal;
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.waitandnotify2;
+
+public class totalEarning
+{
+	int total=0;
+
+public synchronized void totalEarning() {
+	for(int i=0;i<5;i++)
+	{
+		 total=total+i;
+	}
+	System.out.println("total: "+total );
+	notify();
+}
+
+}

@@ -1,0 +1,46 @@
+package com.stream;
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class Map 
+{
+	public static void main(String[] args) 
+	{
+//		int arr[]= {1,2,3,4,5,6};
+//	
+//		IntStream a=Arrays.stream(arr);
+//		
+//		IntStream  k=a.filter((x)->
+//		{
+//			return x%2==0;
+//		}
+//		);
+//		k.forEach(o-> System.out.println(o));
+		
+		
+//		***********  All code in one line **********
+		
+//		int arr[]= {1,2,3,4,5,6};
+//		Arrays.stream(arr).filter(t->t%2==0).forEach(s->System.out.println(s));
+//	
+	
+		
+		
+//		*********************** non primitive data types *********
+		Integer arr[]= {1,2,3,4,5,6};
+		
+			Stream<Integer> a=Arrays.stream(arr);
+			
+			  Stream<Integer> s= a.filter((x)->
+			{
+				return x%2==0;
+			}
+			);
+			s.forEach(o-> System.out.println(o));
+	
+	}
+
+   
+}

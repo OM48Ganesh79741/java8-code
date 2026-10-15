@@ -1,0 +1,22 @@
+package com.waitandnotify2;
+
+public class Earning  extends Thread
+{
+  int total;
+  
+  public void run()
+  {
+	  taotalEarning();
+  }
+
+public void taotalEarning()
+{
+	for(int i=0;i<5;i++)
+	{
+		total=total+i;
+	}
+	System.out.println("total: "+total);
+	
+}
+  
+}
